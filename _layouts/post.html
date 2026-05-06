@@ -11,18 +11,21 @@
         <img src="{{ page.featured_image }}" alt="{{ page.title }}" class="featured-image" style="max-width: 100%; height: auto; margin: 20px 0;">
         {% endif %}
         
-        <div class="post-content">
+        <div class="post-content" style="line-height: 1.8; font-size: 16px; color: #333;">
           {{ content }}
         </div>
         
         {% if page.project_link %}
-        <a href="{{ page.project_link }}" class="project-link"><button class="btn btn-default btn-lg"><i class="fa fa-{{page.button_icon}} fa-lg"></i>{{page.button_text}}</button></a>
+        <div style="margin-top: 30px; margin-bottom: 30px;">
+          <a href="{{ page.project_link }}" class="project-link"><button class="btn btn-default btn-lg"><i class="fa fa-{{page.button_icon}} fa-lg"></i>{{page.button_text}}</button></a>
+        </div>
         {% endif %}
         
         {% if page.tags != empty %}
-        <div class="tags" style="margin-top: 20px;">
+        <div class="tags" style="margin-top: 20px; border-top: 1px solid #eee; padding-top: 20px;">
+          <strong>Tags:</strong>
           {% for tag in page.tags %}
-          <span>{{ tag }}</span>
+          <span style="display: inline-block; background: #f0f0f0; padding: 5px 10px; margin: 5px 5px 5px 0; border-radius: 3px; font-size: 14px;">{{ tag }}</span>
           {% endfor %}
         </div>
         {% endif %}
