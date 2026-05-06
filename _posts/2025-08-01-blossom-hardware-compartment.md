@@ -1,5 +1,5 @@
 ---
-layout: inner
+layout: post
 position: left
 title: 'Blossom Hardware Compartment'
 date: 2025-08-01
@@ -10,4 +10,42 @@ project_link: 'https://kelcai.github.io/blossom'
 button_icon: 'flask'
 button_text: 'Visit Project'
 lead_text: "Hardware storage for Socially Assistive Robot (SAR) Blossom"
+permalink: /projects/blossom/
 ---
+
+## Project Overview
+
+The Blossom Hardware Compartment is a custom-designed storage solution for the Socially Assistive Robot (SAR) Blossom. This project involved creating an efficient, accessible compartment for organizing and protecting the robot's internal hardware components.
+
+### Design Goals
+
+- **Accessibility**: Easy access to components for maintenance and updates
+- **Protection**: Secure mounting and protection of sensitive electronics
+- **Organization**: Logical organization of multiple hardware systems
+- **Durability**: Robust design suitable for repeated assembly and disassembly
+
+### Technical Details
+
+**Tools & Software:**
+- Autodesk Fusion 360 for CAD modeling
+- Bambu Studio for 3D printing optimization
+
+**Materials:**
+- High-strength 3D printed composite parts
+- Custom fastening hardware
+- Protective padding for sensitive components
+
+### Key Features
+
+- Modular compartment design for easy maintenance
+- Custom-fitted mounts for all major hardware systems
+- Cable management channels for organized wiring
+- Quick-access design for frequent hardware updates
+
+### Outcome
+
+This compartment significantly improved the maintainability and durability of the Blossom robot, making it easier for the development team to perform repairs and upgrades while ensuring all components remain well-protected during operation and transport.
+
+---
+
+*For more details about this project, feel free to visit the project link above.*
