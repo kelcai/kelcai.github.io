@@ -1,0 +1,35 @@
+{% include header.html %}
+
+<article>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        
+        <h1>{{ page.title }}</h1>
+        
+        {% if page.featured_image %}
+        <img src="{{ page.featured_image }}" alt="{{ page.title }}" class="featured-image" style="max-width: 100%; height: auto; margin: 20px 0;">
+        {% endif %}
+        
+        <div class="post-content">
+          {{ content }}
+        </div>
+        
+        {% if page.project_link %}
+        <a href="{{ page.project_link }}" class="project-link"><button class="btn btn-default btn-lg"><i class="fa fa-{{page.button_icon}} fa-lg"></i>{{page.button_text}}</button></a>
+        {% endif %}
+        
+        {% if page.tags != empty %}
+        <div class="tags" style="margin-top: 20px;">
+          {% for tag in page.tags %}
+          <span>{{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+{% include footer.html %}
