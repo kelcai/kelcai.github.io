@@ -1,6 +1,6 @@
 ---
 layout: post
-position: left
+position: right
 title: 'Blossom Hardware Compartment'
 date: 2025-08-01
 categories: cad 3dprinting
