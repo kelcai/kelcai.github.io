@@ -101,4 +101,4 @@ enable_contact: false
 enable_nav: true
 nav_item:
   - { url: '/', text: 'Home' }
-  - { url: '/portfolio', text: 'Portfolio' }
+##  - { url: '/portfolio', text: 'Portfolio' }
