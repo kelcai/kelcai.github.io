@@ -1,6 +1,6 @@
 ---
 layout: post
-position: right
+position: left
 title: 'HCC Mounts & Clamp'
 date: 2026-05-01
 permalink: /projects/hcc/
