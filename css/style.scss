@@ -366,6 +366,51 @@ pre {
     padding-left: 0; }
 
 /*--------------------------------------------------------------
+	5.1 Media formatting
+--------------------------------------------------------------*/
+.media-block {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+
+/* Centered image */
+.media-block__image-wrap {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.media-block__image {
+  width: 100%;
+  max-width: 700px;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  display: block;
+}
+
+.media-block__text {
+  margin-top: 1rem;
+  line-height: 1.7;
+}
+
+/* Side-by-side layout */
+.media-block--side {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .media-block--side {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*--------------------------------------------------------------
 	6.0 Syntax highlighting styles
 --------------------------------------------------------------*/
 .highlight {
