@@ -1,3 +1,9 @@
-  {% if post.featured_image %}
-  <img class="img-responsive" src="{{ post.featured_image }}" title="{{ post.title }}">
-  {% endif %}
+{% if post.featured_image %}
+  <div class="project-image-wrap">
+    <img
+      src="{{ post.featured_image | relative_url }}"
+      alt="{{ post.title | escape }}"
+      class="img-responsive project-image"
+    >
+  </div>
+{% endif %}
