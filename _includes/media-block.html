@@ -1,0 +1,21 @@
+<div class="media-block {% if include.layout == 'side' %}media-block--side{% endif %}">
+  
+  <div class="media-block__image-wrap">
+    <img 
+      src="{{ include.image | relative_url }}" 
+      alt="{{ include.alt | default: '' }}"
+      class="media-block__image"
+    >
+  </div>
+
+  <div class="media-block__text">
+    {% if include.title %}
+      <h2>{{ include.title }}</h2>
+    {% endif %}
+
+    {% if include.content %}
+      {{ include.content }}
+    {% endif %}
+  </div>
+
+</div>
